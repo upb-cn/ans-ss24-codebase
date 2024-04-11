@@ -27,5 +27,4 @@ class BridgeTopo(Topo):
 
         # TODO: add nodes and links to construct the topology; remember to specify the link properties
 
-
 topos = {'bridge': (lambda: BridgeTopo())}

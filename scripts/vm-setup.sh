@@ -74,10 +74,12 @@ sudo apt-get install -y --no-install-recommends \
   mininet \
   openvswitch-switch \
   openvswitch-common \
+  openvswitch-testcontroller \
   vlc
 
-# Install Ryu network controller
-pip install ryu
+# Install Ryu network controller and Mininet packages
+sudo pip install ryu
+sudo pip install mininet
 
 # Install needed Python libraries
 pip install networkx
