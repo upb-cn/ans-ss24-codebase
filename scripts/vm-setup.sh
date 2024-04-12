@@ -74,12 +74,15 @@ sudo apt-get install -y --no-install-recommends \
   mininet \
   openvswitch-switch \
   openvswitch-common \
-  openvswitch-testcontroller \
   vlc
 
 # Install Ryu network controller and Mininet packages
 sudo pip install ryu
 sudo pip install mininet
+
+# Fix a compatability issue with eventlet
+sudo pip uninstall --yes eventlet
+sudo pip install eventlet==0.30.2
 
 # Install needed Python libraries
 pip install networkx
