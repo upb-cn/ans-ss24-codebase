@@ -1,0 +1,24 @@
+{
+  "target": "bmv2",
+  "p4info": "build/router.p4.p4info.txt",
+  "bmv2_json": "build/router.json",
+  "table_entries": [
+    {
+      "table": "MyIngress.YOUR_TABLE_NAME",
+      "default_action": true,
+      "action_name": "MyIngress.drop",
+      "action_params": { }
+    },
+    {
+      "table": "MyIngress.YOUR_TABLE_NAME",
+      "match": {
+        "KEY_TO_MATCH": "VALUE_FOR_KEY"
+      },
+      "action_name": "MyIngress.YOUR_ACTION",
+      "action_params": {
+        "PARAM1": "VALUE FOR PARAM1",
+        "PARAM2": "VALUE FOR PARAM2"
+      }
+    }
+  ]
+}
